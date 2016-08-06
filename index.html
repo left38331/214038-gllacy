@@ -5,8 +5,248 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+      <header>
+          <div class="container"> 
+              <div class="index-logo">
+                  <img src="http://placehold.it" width="100" height="40" alt="GlaccyShop ">
+              </div>
+              <nav class="main-navigation"> 
+                  <ul>
+                      <li>
+                          <a href="#">Каталог</a>
+                      </li>
+                      <li>
+                          <a href="#">Доставка и оплата</a>
+                      </li>
+                      <li>
+                          <a href="#">О компании</a>
+                      </li>
+                  </ul>
+              </nav>
+              <div class="user-block">
+                  <div class="user-block-search">
+                      <a class="search"></a>
+                  </div>
+                  <div class="user-block-login">
+                      <a class="login" href="#">Вход</a>
+                  </div>
+                  <div class="user-block-basket">
+                      <a class="basket" href="#">Пусто</a>
+                  </div>
+              </div>   
+              <div class="work-time">
+                  <p>С 10 до 20, ежедневно</p>
+                  <p>8 812 450-25-25</p>   
+              </div>
+          </div>
+      </header>
+      <main>
+          <div class="main-content"><!--  Это я так понимаю же фоновое изображение мороженок и мы его через CSS  зададим? -->     
+              <h1>Крем-брюле и пломбир<br>
+                  с малиновым джемом</h1>
+              <div class="slider"> 
+                  <input id="slide-1" type="radio" name="slides" checked>
+                  <input id="slide-2" type="radio" name="slides" >
+                  <input id="slide-3" type="radio" name="slides" >
+              </div>
+              <div class="btn">
+                  <a href="#">Давайте оба</a>
+              </div>
+          </div>
+          <section class="content">
+              <article class="content-left">
+                  <h2>Малинка даром!</h2>
+                  <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                  <div class="content-link">
+                      <a href="#">Хочу варенье!</a>
+                  </div>
+              </article>
+              <article class="content-right">
+                  <h2>Шоколадки даром!</h2>
+                  <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                  <div class="content-link">
+                      <a href="#">Хочу шоколадки!</a>
+                  </div>
+              </article>
+          </section>
+          <section class="ices">
+              <ul class="content-ice">
+                  <li>
+                      <article class="ice-1">
+                          <div class="ice-big-1">
+                          </div>
+                          <div class="ice-small-1">
+                          </div>
+                          <div class="price-item-1">310руб/кг.
+                          </div>
+                          <div class="ices-link">
+                              <a href="#">Сливочное с апельсиновым<br>
+                              джемом и цитрусовой стружкой</a>
+                          </div>
+                      </article>
+                  </li>
+                  <li>
+                      <article class="ice-1">
+                          <div class="ice-big-1">
+                          </div>
+                          <div class="ice-small-1">
+                          </div>
+                          <div class="price-item-1">380руб/кг.
+                          </div>
+                          <div class="ices-link">
+                              <a href="#">Сливочно-кофейное с кусочками<br>
+                              шоколада</a>
+                          </div>
+                      </article>
+                  </li>
+                  <li>
+                     <article class="ice-1">
+                          <div class="ice-big-1">
+                          </div>
+                          <div class="ice-small-1">
+                          </div>
+                          <div class="price-item-1">355руб/кг.
+                          </div>
+                          <div class="ices-link">
+                              <a href="#">Сливочно-клубничное с <br>
+                              присыпкой из белого шоколада</a>
+                          </div>
+                      </article>
+                  </li>
+                  <li>
+                      <article class="ice-1">
+                          <div class="ice-big-1">
+                          </div>
+                          <div class="ice-small-1">
+                          </div>
+                          <div class="price-item-1">415руб/кг.
+                          </div>
+                          <div class="ices-link">
+                              <a href="#">Сливочное крем-боюле с<br>
+                              карамельной подливкой</a>
+                          </div>
+                      </article>
+                  </li>
+              </ul>
+          </section>
+          <section class="description">
+              <p class="caption">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+              <div class="description-column">
+                  <div class="description-left">
+                      <ul class="description-left-list">
+                          <li class="description-item">
+                              <div class="icon-1"> <!-- эту иконку левее текста тоже как фоновый элемент можно добавить? И как их, спрайтом, добавлять нужно будет?-->
+                              </div>
+                              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                          </li>
+                          <li class="description-item">
+                              <div class="icon-2">
+                              </div>
+                              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="description-right">
+                      <ul class="description-right-list">
+                          <li class="description-item">
+                              <div class="icon-3"> 
+                              </div>
+                              <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                          </li>
+                          <li class="description-item">
+                              <div class="icon-4">
+                              </div>
+                              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </section>
+          <section class="blog-subscription">
+              <article class="blog">
+                  <p>Новое в нашем блоке</p>
+                  <div class="blog-link">
+                  <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+              </div>
+              </article>
+              <article class="subscription">
+                  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+                  <form class="subscription-form" action="#" method="post">
+                      <ul class="form-list">
+                          <li class="form-item">
+                              <input type="text" name="email" placeholder="Электронная почта">
+                          </li>
+                          <li>
+                              <input type="submit" value="Отправить">
+                          </li>
+                      </ul>
+                  </form>
+              </article>      
+          </section>
+          <section class="info"> 
+              <div class="map"><!--эта карта проезда как скрин идет фоном или она должна быть интерактивная? -->
+              </div>
+              <div class="aside ">
+                  <p>Адоес главного офиса и <br>
+                      офлайн магазинаЖ</p>
+                  <p class="bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+                  <p>Для заказов по телефону:</p>
+                  <p class="bold">8 812 450-25-25 </p>
+                  <p>(с 10 до 20 ежедневно)</p>
+                  <div class="aside-link">
+                      <a href="#">Форма обратной связи</a> <!--сделал форму обратной связи как ссылку, как если бы оно вело на другую страницку, не знаю правильно ли так, и если форма обратной связи как всплывающее окно то как оно оформляется?-->
+                  </div>
+              </div>
+          </section>     
+      </main>
+      <footer class="main-footer">
+      <div class="container-footer">
+          <section class="footer-social">
+              <ul>
+                  <li>
+                      <a class="social-btn social-btn-tw" href="#">Вконтакте</a>
+                  </li>
+                  <li> 
+                      <a class="social-btn social-btn-inst" href="#">Фейсбук</a>
+                  </li>
+                  <li> 
+                      <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
+                  </li>
+                  <li> 
+                      <a class="social-btn social-btn-vk" href="#">Инстаграм</a>
+                  </li>
+              </ul>
+          </section>
+          <section >
+              <div class="footer-nav">
+                  <div class="footer-nav-left">
+                      <ul class="nab-left-list">
+                          <li>
+                              <a href="#">Для поставщиков</a>
+                          </li>
+                          <li>
+                              <a href="#">О производстве</a>
+                          </li>
+                      </ul>
+                      
+                  </div>
+                  <div class="footer-nav-right">
+                      <ul class="nab-left-list">
+                          <li>
+                              <a href="#">Наши документы</a>
+                          </li>
+                          <li>
+                              <a href="#">Экологические стандарты</a>
+                          </li>
+                      </ul>
+                  </div>  
+              </div>
+          </section>
+          <section class="footer-copyright">
+              <a class="btn" href="https://htmlacademy.ru"><img src="http://placehold.it/40x40"></a>
+              <p>Создано в HTML Academy@2016</p>
+          </section>
+      </div>
+      </footer>
   </body>
 </html>
