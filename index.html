@@ -6,12 +6,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header>
-          <div class="container"> 
-              <div class="index-logo">
-                  <img src="img/Logo.svg" width="153" height="63.25" alt="Логотип">
-              </div>
-              <nav class="main-navigation"> 
+      <header class="main-header">
+          <div class="container clearfix"> 
+              <nav class="main-navigation clearfix"> 
+                  <div class="index-logo">
+                       <img src="img/Logo.svg" width="153" height="63.25" alt="Логотип">
+                  </div>
                   <ul class="nav-list">
                       <li class="nav-item">
                           <a href="#">Каталог</a>
@@ -129,8 +129,8 @@
                   <input  type="radio" name="slides" >
               </div>        
           </div>
-          <section class="content">
-              <article class="content-left">
+          <section class="content clearfix">
+              <article class="content-left"> 
                   <h2>Малинка даром!</h2>
                   <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                   <div class="content-link">
@@ -147,8 +147,8 @@
           </section>
            <section class="ices">
                <ul class="content-ice">
-                  <li>
-                      <img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <li class="content-ice-item"> 
+                      <img src="img/ice1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                       <img src="img/xit.jpg" width="61" height="61" alt="Хит">
                       <div class="price">
                           <span class="large">310</span><span class="little">/кг</span>
@@ -161,8 +161,8 @@
                           <a href="#">Быстрый просмотр</a>
                       </div>
                   </li>
-                  <li>
-                      <img src="img/ice2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                  <li class="content-ice-item">
+                      <img src="img/ice2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                       <img src="img/xit.jpg" width="61" height="61" alt="Хит">
                       <div class="price">
                           <span class="large">380</span><span class="little">/кг</span>
@@ -175,8 +175,8 @@
                           <a href="#">Быстрый просмотр</a>
                       </div>
                   </li>
-                  <li>
-                      <img src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное присыпкой из белого шоколада">
+                  <li class="content-ice-item">
+                      <img src="img/ice3.png" width="267" height="267" alt="Сливочно-клубничное присыпкой из белого шоколада">
                       <img src="img/xit.jpg" width="61" height="61" alt="Хит">
                       <div class="price">
                           <span class="large">355</span><span class="little">/кг</span>
@@ -189,8 +189,8 @@
                           <a href="#">Быстрый просмотр</a>
                       </div>
                     </li>
-                   <li>
-                      <img src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-боюле карамельной подливкой">
+                   <li class="content-ice-item">
+                      <img src="img/ice4.png" width="267" height="267" alt="Сливочное крем-боюле карамельной подливкой">
                       <img src="img/xit.jpg" width="61" height="61" alt="Хит">
                       <div class="price">
                           <span class="large">415</span><span class="little">/кг</span>
@@ -205,7 +205,7 @@
                   </li>
                 </ul>
           </section>
-          <section class="description">
+          <section class="description clearfix">
               <p class="caption">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
               <div class="description-column">
                   <div class="description-left">
@@ -238,7 +238,7 @@
                   </div>
               </div>
           </section>
-          <section class="blog-subscription">
+          <section class="blog-subscription clearfix">
               <article class="blog">
                   <p>Новое в нашем блоге</p>
                   <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
@@ -251,11 +251,11 @@
                   </form>
               </article>      
           </section>
-          <section class="info"> 
+          <section class="info clearfix"> 
               <div class="map">
               </div>
               <div class="aside ">
-                  <p>Адhес главного офиса и <br>
+                  <p>Адрес главного офиса и <br>
                       офлайн магазина</p>
                   <p class="bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
                   <p>Для заказов по телефону:</p>
@@ -267,32 +267,32 @@
               </div>
           </section>     
       </main>
-      <footer class="main-footer">
-      <div class="container-footer">
+      <footer class="main-footer clearfix">
+      <div class="container">
           <section class="footer-social">
               <ul>
-                  <li>
+                  <li class="social-item">
                       <a class="social-btn social-btn-tw" href="#">Вконтакте</a>
                   </li>
-                  <li> 
+                  <li class="social-item"> 
                       <a class="social-btn social-btn-inst" href="#">Фейсбук</a>
                   </li>
-                  <li> 
+                  <li class="social-item"> 
                       <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
                   </li>
-                  <li> 
+                  <li class="social-item"> 
                       <a class="social-btn social-btn-vk" href="#">Инстаграм</a>
                   </li>
               </ul>
           </section>
-          <section >
-              <div class="footer-nav">
+          <section class="footer-list" >
+              <div class="footer-nav ">
                   <div class="footer-nav-left">
                       <ul class="nab-left-list">
-                          <li>
+                          <li class="nab-item">
                               <a href="#">Для поставщиков</a>
                           </li>
-                          <li>
+                          <li class="nab-item">
                               <a href="#">О производстве</a>
                           </li>
                       </ul>
@@ -300,10 +300,10 @@
                   </div>
                   <div class="footer-nav-right">
                       <ul class="nab-left-list">
-                          <li>
+                          <li class="nab-item">
                               <a href="#">Наши документы</a>
                           </li>
-                          <li>
+                          <li class="nab-item">
                               <a href="#">Экологические стандарты</a>
                           </li>
                       </ul>
