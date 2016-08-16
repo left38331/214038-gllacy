@@ -1,3 +1,250 @@
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+
+
+
+
+
+
+
 body {
     font-size: 16px;
     line-height: 22px;
@@ -10,12 +257,21 @@ h1 {
     font-size: 60px;
     line-height: 60.35px;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 h2 {
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
 
 .main-header {
@@ -38,15 +294,20 @@ h2 {
     background-color: yellow;
     float: left;
     font-size: 0;
+   
 }
 
 .nav-item {
     display: inline-block;
     font-size: 16px;
+   margin-top: 27px;
+    margin-right: 30px;
 }
 
 .index-logo {
     float: left;
+    margin-top: 10px;
+    margin-right: 30px;
 }
 
 .user-block {
@@ -59,6 +320,9 @@ h2 {
 .work-time {
     background-color: darkgoldenrod;
     float: right;
+    position: relative;
+    bottom: -167px;
+    right: -501px;
 }
 
 .clearfix::after {
@@ -81,39 +345,49 @@ main {
 .content {
     background-color: dimgray;
     margin-bottom: 40px;
+   
     
 }
 
 .content-left {
     width: 520px;
     float: left;
-    min-height: 190px;
+    min-height: 197px;
     margin-right: 26px;
-    padding: 20px;
+    padding: 13px 20px 20px 20px;
     background-color: forestgreen;
+    
 }
 
 .content-right {
     width: 520px;
     float: right;
-     background-color: forestgreen;
-     min-height: 190px; 
-    padding: 20px;
+    background-color: forestgreen;
+    min-height: 197px;
+    padding: 13px 20px 20px 20px;
 }
 
 .ices {
     background-color: orange;
     font-size: 0;
+    margin-bottom: 40px;
     
 }
 
 .content-ice-item {
     display: inline-block;
     width: 267px;
+    min-height: 360px;
     margin-left: -40px;         /* пришлось добавлять эту строку и вместо margin-right: 26px ставить 66px; , так как первый элемент  content-ice-item как-будто по умолчанию имел margin-left: 40px; не подскажешь почему так получилось? */
     margin-right: 66px;
     font-size: 16px;
+    background-color: aqua;
+    vertical-align: top;
     
+}
+
+.top-left {
+    position: absolute;
 }
 
 .content-ice-item:nth-child(4) {
@@ -122,8 +396,9 @@ main {
 
 .description {
     background-color: crimson;
-    min-height: 305px;
+    min-height: 245px;
     margin-bottom: 40px;
+    padding: 30px 20px 30px 20px;
     
 }
 
@@ -149,39 +424,50 @@ main {
     background-color: gold;
     margin-bottom: 40px;
     
+    
 }
 
 .blog {
     float: left;
-    min-height: 220px;
-    width: 560px;
+    min-height: 170px;
+    width: 520px;
     margin-right: 26px;
+    padding: 25px 20px 25px 20px;
     background-color: wheat;
 }
 
 .subscription {
     float: right;
-    min-height: 220px;
-    width: 560px;
+    min-height: 170px;
+    width: 520px;
+    padding: 25px 20px 25px 20px;
      background-color: wheat;
 }
 
 .info {
     background-color: chartreuse;
-    
+     min-height: 430px;
     margin: 0;   /* нужно сделать так чтобы карта была вплотную к границам*/
+  
 }
 
 .map {
-    min-height: 430px;
+      position: absolute;  /* 1.	Как быть с картой, если не хватает ее ширины?*/
+
+
+    
 }
 .aside {
-    background-color: turquoise;
+    background-color: turquoise; 
     float: right;
     min-height: 307px;
+/* 2.	И как блок aside спозиционировать на карте (теперь он частично картой закрыт), чтобы он не прилипал к границе правой при разных разрешениях экрана и был выровнен по направляющей как и все блоки, что выше него на макете.*/
+  
+   
 }
 .main-footer {
     background-color: pink;
+    padding-top: 37px;
 }
 
 .footer-social{
@@ -223,5 +509,60 @@ main {
 .footer-copyright {
     float: right;
     background-color: crimson;
+}
+
+.title-inner {
+    background-color: gray;
+    margin-bottom: 25px;
+}
+
+.breadcrumbs{
+    background-color: fuchsia;
+    font-size: 0;
+}
+
+.breadcrumbs-item {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.forms {
+    background-color: gold;
+    font-size: 0;
+    margin-bottom: 40px;
+}
+
+.form-item {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.radio-form {
+    font-size: 0;
+}
+
+.radio-item {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.checbox-form {
+    font-size: 0;
+}
+
+.checbox-item {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.pagination {
+    background-color: darkred;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.pagination_item {
+    display: inline-block;
+    font-size: 16px;
 }
 
