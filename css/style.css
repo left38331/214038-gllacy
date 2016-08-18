@@ -1,244 +1,3 @@
-html {
-  font-family: sans-serif; /* 1 */
-  line-height: 1.15; /* 2 */
-  -ms-text-size-adjust: 100%; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 3 */
-}
-
-body {
-  margin: 0;
-}
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-figcaption,
-figure,
-main { /* 1 */
-  display: block;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
-}
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-b,
-strong {
-  font-weight: inherit;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-audio,
-video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-img {
-  border-style: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-button,
-html [type="button"], /* 1 */
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-}
-
-textarea {
-  overflow: auto;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-details, /* 1 */
-menu {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-canvas {
-  display: inline-block;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
-
 
 
 
@@ -251,6 +10,7 @@ body {
     color: #ffffff;
     font-weight: normal;
     font-family: "Roboto", sans-serif;
+    background: url(../img/bg1.jpg);
 }
 
 h1 {
@@ -345,8 +105,11 @@ main {
 .content {
     background-color: dimgray;
     margin-bottom: 40px;
-   
-    
+    font-size: 18px; 
+}
+
+.content h2 {
+    margin-bottom: 15px;
 }
 
 .content-left {
@@ -355,8 +118,16 @@ main {
     min-height: 197px;
     margin-right: 26px;
     padding: 13px 20px 20px 20px;
-    background-color: forestgreen;
+    background: url(../img/fruit-bg.jpg) no-repeat;
+    border-radius: 20px;
+    position: relative;
     
+}
+
+.content-link {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }
 
 .content-right {
@@ -365,13 +136,19 @@ main {
     background-color: forestgreen;
     min-height: 197px;
     padding: 13px 20px 20px 20px;
+    background: url(../img/choco-bg.jpg) no-repeat;
+    border-radius: 20px;
+    position: relative;
 }
 
 .ices {
-    background-color: orange;
     font-size: 0;
     margin-bottom: 40px;
-    
+ 
+}
+
+.content-ice {
+    list-style: none;
 }
 
 .content-ice-item {
@@ -380,50 +157,141 @@ main {
     min-height: 360px;
     margin-left: -40px;         /* пришлось добавлять эту строку и вместо margin-right: 26px ставить 66px; , так как первый элемент  content-ice-item как-будто по умолчанию имел margin-left: 40px; не подскажешь почему так получилось? */
     margin-right: 66px;
+   
     font-size: 16px;
-    background-color: aqua;
     vertical-align: top;
+    position: relative;
     
 }
 
 .top-left {
     position: absolute;
+    
+}
+
+.price {
+    position: absolute;
+    top: 220px;
 }
 
 .content-ice-item:nth-child(4) {
     margin-right: 0;
 }
 
+
+.bottom-ice-item {
+    margin-top: 5px;
+    padding: 0 5px;
+    text-align: center;
+    
+}
+
 .description {
-    background-color: crimson;
-    min-height: 245px;
+    background: url("../img/pattern.jpg");
+    min-height: 255px;
     margin-bottom: 40px;
-    padding: 30px 20px 30px 20px;
+    padding: 25px 20px 25px 20px;
+    border-radius: 15px;
+    color: #323232;
     
 }
 
 .caption {
-    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
+
+.description-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .description-left {
     float: left;
     width: 540px;
-  
     margin-right: 26px;
-    background-color: gray;
+    padding-top: 15px;
+    position: relative;
 }
+
+.before-item-1:before {
+    content: " ";  
+    position: absolute;  
+    top: 0;  
+    left: 0;
+    background: url(../img/small-ice.svg) no-repeat;  
+    height: 48px;  
+    width: 48px;  
+}
+
+.before-item-1 {
+    margin-left: 56px;
+    margin-bottom: 15px;
+}
+
+.before-item-2:before {
+    content: " ";  
+    position: absolute;  
+    top: 0;  
+    left: -55px;
+    background: url(../img/small-list.svg) no-repeat;  
+    height: 48px;  
+    width: 48px;  
+}
+
+.before-item-2 {
+    position: relative;
+    padding-top: 16px;
+    margin-left: 56px;
+}
+
+
 
 .description-right {
     float: right;
     width: 540px;
-       background-color: gray;
-      min-height: 190px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.before-item-3 {
+
+    margin-left: 56px;
+    margin-bottom: 15px;
+}
+
+.before-item-4 {
+    position: relative;
+    padding-top: 16px;
+    margin-left: 56px;
+}
+
+.before-item-3:before {
+    content: " ";  
+    position: absolute;  
+    top: 0;  
+    left: 0;
+    background: url(../img/small-caw.svg) no-repeat;  
+    height: 48px;  
+    width: 48px;  
+}
+
+.before-item-4:before {
+    content: " ";  
+    position: absolute;  
+    top: 0;  
+    left: -55px;
+    background: url(../img/small-temp.svg) no-repeat;  
+    height: 48px;  
+    width: 48px;  
 }
 
 .blog-subscription {
-    background-color: gold;
     margin-bottom: 40px;
-    
+    color: #323232;
     
 }
 
@@ -433,15 +301,26 @@ main {
     width: 520px;
     margin-right: 26px;
     padding: 25px 20px 25px 20px;
-    background-color: wheat;
+    background: url(../img/strawberry-bg.jpg);
+    border-radius: 20px;
+    
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.blog a {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 .subscription {
     float: right;
-    min-height: 170px;
-    width: 520px;
-    padding: 25px 20px 25px 20px;
-     background-color: wheat;
+    min-height: 140px;
+    width: 510px;
+    padding: 40px 25px 40px 25px;
+    background: url(../img/color-bg.jpg);
+    border-radius: 20px;
 }
 
 .info {
