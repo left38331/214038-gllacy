@@ -5,6 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -16,6 +17,14 @@
                   <ul class="nav-list">
                       <li class="nav-item">
                           <a href="#">Каталог</a>
+                          <ul class="sub-menu">
+                                <li><a href="#1">Новинки</a></li>
+                                <li></li>
+                                <li><a href="#2">Сливочное</a></li>
+                                <li><a href="#3">Щербеты</a></li>
+                                <li><a href="#2">Фруктовый лед</a></li>
+                                <li><a href="#3">Мелорин</a></li>
+                          </ul>
                       </li>
                       <li class="nav-item">
                           <a href="#">Доставка и оплата</a>
@@ -105,22 +114,22 @@
                   <div class="slide-1">
                       <h1>Крем-брюле и пломбир<br>
                       с малиновым джемом</h1>
-                      <div class="btn">
-                        <a href="#">Давайте оба</a>
+                      <div >
+                        <a  class="btn" href="#">Давайте оба</a>
                       </div>
                   </div>
                   <div class="slide-2">
                       <h1>Шоколадный пломбир<br>
                       и лимонный сорбет</h1>
-                      <div class="btn">
-                        <a href="#">Давайте оба</a>
+                      <div >
+                        <a  class="btn" href="#">Давайте оба</a>
                       </div>
                   </div>
                   <div class="slide-3">
                       <h1>Пломбир с помадкой<br>
                       и клубничный шербет</h1>
-                      <div class="btn">
-                        <a href="#">Давайте оба</a>
+                      <div >
+                        <a class="btn" href="#">Давайте оба</a>
                       </div>
                   </div>
               </div>
@@ -135,14 +144,14 @@
                   <h2>Малинка даром!</h2>
                   <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                   <div class="content-link">
-                      <a href="#">Хочу варенье!</a>
+                      <a class="btn" href="#">Хочу варенье!</a>
                   </div>
               </article>
               <article class="content-right">
                   <h2>Шоколадки даром!</h2>
                   <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                   <div class="content-link">
-                      <a href="#">Хочу шоколадки!</a>
+                      <a  class="btn" href="#">Хочу шоколадки!</a>
                   </div>
               </article>
           </section>
@@ -166,7 +175,7 @@
                               джемом и цитрусовой стружкой</a>
                           </div>
                           <div class="ices-link-hover">
-                              <a href="#">Быстрый просмотр</a>
+                              <a class="btn" href="#">Быстрый просмотр</a>
                           </div>
                       </div>
                   </li>
@@ -188,7 +197,7 @@
                               джемом и цитрусовой стружкой</a>
                           </div>
                           <div class="ices-link-hover">
-                              <a href="#">Быстрый просмотр</a>
+                              <a class="btn" href="#">Быстрый просмотр</a>
                           </div>
                       </div>
                   </li>
@@ -210,7 +219,7 @@
                               джемом и цитрусовой стружкой</a>
                           </div>
                           <div class="ices-link-hover">
-                              <a href="#">Быстрый просмотр</a>
+                              <a class="btn" href="#">Быстрый просмотр</a>
                           </div>
                       </div>
                     </li>
@@ -232,7 +241,7 @@
                               джемом и цитрусовой стружкой</a>
                           </div>
                           <div class="ices-link-hover">
-                              <a href="#">Быстрый просмотр</a>
+                              <a class="btn" href="#">Быстрый просмотр</a>
                           </div>
                       </div>
                   </li>
@@ -274,13 +283,13 @@
           <section class="blog-subscription clearfix">
               <article class="blog">
                   <p>Новое в нашем блоге</p>
-                  <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+                  <a href="#">10  способов сервировки<br> фруктовых щербетов<br> к столу</a>
               </article>
               <article class="subscription">
                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
                   <form class="subscription-form" action="#" method="post">
                       <input type="text" name="email" placeholder="Электронная почта">  
-                      <input type="submit" value="Отправить">
+                      <button  class="btn" type="submit">Отправить</button> 
                   </form>
               </article>      
           </section>     

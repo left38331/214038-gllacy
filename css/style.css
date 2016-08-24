@@ -5,12 +5,13 @@
 
 
 body {
+    min-width: 1200px;
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
-    font-weight: normal;
-    font-family: "Roboto", sans-serif;
-    background: url(../img/bg1.jpg);
+    font-weight: 700;
+    font-family: "Roboto", "Arial", sans-serif;
+    background: #88a294 url(../img/bg1.jpg)  center top;
 }
 
 h1 {
@@ -35,7 +36,7 @@ p {
 }
 
 .main-header {
-      background-color: khaki;
+      
     min-height: 120px;
     margin-bottom: 2px;
     position: relative;
@@ -49,25 +50,94 @@ p {
 }
 
 .main-navigation {
+
     width: 600px;
     min-height: 73px;
-    background-color: yellow;
+   
     float: left;
     font-size: 0;
-   
+}
+
+.main-navigation a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 14px;
+    
+}
+
+.nav-list  a:hover {
+    color: #333333;
+    background: #f7f6f3;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+ .nav-list  a:active {
+    background: #ededed;
+    box-shadow:inset 0 2px 1px 0 #696969;
 }
 
 .nav-item {
     display: inline-block;
     font-size: 16px;
-   margin-top: 27px;
-    margin-right: 30px;
+    margin-top: 17px;
+    margin-right: 1px;
+}
+
+.main-navigation > li {
+    position: relative;
+}
+
+ .sub-menu a {
+    text-decoration: none;
+    color:#323232;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.sub-menu a:hover {
+    background: #fbded7;
+}
+
+.sub-menu a:active {
+    background: #f6b5a5;
+}
+
+ .sub-menu li:first-child a {
+    font-weight: 700;
+}
+
+ .sub-menu li:nth-child(2)  {
+    height: 1px;
+     width: 128px;
+     background: #d1d0ce;
+}
+
+.main-navigation .sub-menu {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 5px 5px ;
+    list-style: none;
+    background: #f8f7f4;
+    
+    margin-top: 5px;
+    margin-left: -6px;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4); 
+}
+
+
+
+.main-navigation li:hover  .sub-menu  {
+    display: block;
 }
 
 .index-logo {
     float: left;
     margin-top: 10px;
-    margin-right: 30px;
+    margin-right: 18px;
 }
 
 .user-block {
@@ -92,7 +162,7 @@ p {
 }
 
 main {
-        background-color: navy;
+    
 }
 
 .slide-1,.slide-2,.slide-3 {
@@ -103,9 +173,9 @@ main {
     margin-bottom: 63px;
 }
 .content {
-    background-color: dimgray;
     margin-bottom: 40px;
     font-size: 18px; 
+    
 }
 
 .content h2 {
@@ -115,14 +185,16 @@ main {
 .content-left {
     width: 520px;
     float: left;
-    min-height: 197px;
+    min-height: 194px;
     margin-right: 26px;
-    padding: 13px 20px 20px 20px;
+    padding: 15px 20px 20px 20px;
     background: url(../img/fruit-bg.jpg) no-repeat;
     border-radius: 20px;
-    position: relative;
+    position: relative; 
     
 }
+
+
 
 .content-link {
     position: absolute;
@@ -134,8 +206,8 @@ main {
     width: 520px;
     float: right;
     background-color: forestgreen;
-    min-height: 197px;
-    padding: 13px 20px 20px 20px;
+    min-height: 194px;
+    padding: 15px 20px 20px 20px;
     background: url(../img/choco-bg.jpg) no-repeat;
     border-radius: 20px;
     position: relative;
@@ -164,6 +236,11 @@ main {
     
 }
 
+.content-ice-item:hover {
+    background: red;
+    
+}
+
 .top-left {
     position: absolute;
     
@@ -183,14 +260,21 @@ main {
     margin-top: 5px;
     padding: 0 5px;
     text-align: center;
-    
+}
+
+
+
+.ices-link-hover {
+   
+    display: none;
+   
 }
 
 .description {
-    background: url("../img/pattern.jpg");
-    min-height: 255px;
+    background: #eadbc1 url("../img/pattern.jpg");
+    min-height: 245px;
     margin-bottom: 40px;
-    padding: 25px 20px 25px 20px;
+    padding: 20px 20px 25px 20px;
     border-radius: 15px;
     color: #323232;
     
@@ -199,8 +283,12 @@ main {
 .caption {
     font-size: 24px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 8px;
+}
+
+.description-column {
+    font-weight: 400;
 }
 
 .description-list {
@@ -229,13 +317,14 @@ main {
 
 .before-item-1 {
     margin-left: 56px;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
+  
 }
 
 .before-item-2:before {
     content: " ";  
     position: absolute;  
-    top: 0;  
+    top: 3px;  
     left: -55px;
     background: url(../img/small-list.svg) no-repeat;  
     height: 48px;  
@@ -260,7 +349,7 @@ main {
 .before-item-3 {
 
     margin-left: 56px;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
 }
 
 .before-item-4 {
@@ -282,7 +371,7 @@ main {
 .before-item-4:before {
     content: " ";  
     position: absolute;  
-    top: 0;  
+    top: 3px;  
     left: -55px;
     background: url(../img/small-temp.svg) no-repeat;  
     height: 48px;  
@@ -297,30 +386,88 @@ main {
 
 .blog {
     float: left;
-    min-height: 170px;
+    min-height: 172px;
     width: 520px;
     margin-right: 26px;
-    padding: 25px 20px 25px 20px;
-    background: url(../img/strawberry-bg.jpg);
+    padding: 23px 20px 25px 20px;
+    background: #f8f7f4 url(../img/strawberry-bg.jpg);
     border-radius: 20px;
     
     font-size: 16px;
+    font-weight: 500;
     line-height: 22px;
 }
 
 .blog a {
+    
     font-size: 24px;
     font-weight: bold;
     line-height: 30px;
+    color: #323232;
 }
 
 .subscription {
     float: right;
-    min-height: 140px;
+    min-height: 157px;
     width: 510px;
-    padding: 40px 25px 40px 25px;
-    background: url(../img/color-bg.jpg);
+    padding: 33px 25px 30px 25px;
+    background: #f8f7f4 url(../img/color-bg.jpg);
     border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.subscription-form {
+    
+    margin-top: 37px;
+}
+
+.subscription-form input {
+    float: left;
+    font: inherit;
+    color: inherit;
+    width: 345px;
+    
+    padding: 11px 0 10px 14px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d2;
+}
+
+.subscription-form input:nth-child(2n) {
+  margin-right: 0;
+}
+
+.subscription-form .btn {
+    float: right;
+    margin-left: 12px;
+}
+
+.btn  {
+    display: inline-block;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(#f26843, #e74a35);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+    
+}
+
+.btn:hover {
+  background:  linear-gradient(#f58669, #ec6f5e);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
+}
+
+.btn:active {
+    background:  linear-gradient(#e74a35,  #f26843) ;
+  
+    box-shadow: 0 -2px 2px 0 rgba(172, 16, 0, 1);
 }
 
 .info {
