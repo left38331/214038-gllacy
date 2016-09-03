@@ -16,7 +16,7 @@
               <div class="container clearfix"> 
                   <nav class="main-navigation clearfix"> 
                       <div class="index-logo">
-                           <img src="img/Logo.svg" width="153" height="63.25" alt="Логотип">
+                           <img src="img/logo.svg" width="153" height="63" alt="Логотип">
                       </div>
                       <ul class="main-menu">
                           <li class="nav-item">
@@ -36,82 +36,80 @@
                               <a href="#">О Компании</a>
                           </li>
                       </ul>
-                  </nav>
-                  <div class="user-block">
-                      <div class="user-block-search user-item">
-                          <a class="search" href="#">
-                              
-                          </a>
-                          <div class="search-form">
-                              <form action="#" method="post" >
-                                  <input type="search" name="search" placeholder="Что ищем?">
+                      <ul class="user-block">
+                          <li class="user-block-search user-item">
+                              <a class="search" href="#"></a>
+                              <form class="search-form" action="#" method="post" >
+                                  <input type="search" id="search1" name="search" placeholder="Что ищем?">
+                                  <label class="search1" for="search1">Что ищем?</label>
                               </form>
-                          </div>
-                      </div>
-                      <div class="user-block-login user-item">
-                          <a class="login" href="#">Вход</a>
-                          <div class="login-form">
-                              <form action="#" method="post" >
-                                  <input type="text" name="name" placeholder="Электронная почта">
-                                  <input type="password"  name="password" placeholder="Пароль">
+                          </li>
+                          <li class="user-block-login user-item">
+                              <a class="login" href="#">Вход</a>
+                              <form  class="login-form" action="#" method="post" >
+                                  <input type="text" id="name2" name="name" placeholder="Электронная почта">
+                                  <label class="name2" for="name2">Электронная почта</label>
+                                  <input type="password" id="password1"  name="password" placeholder="Пароль">
+                                  <label class="password1" for="password1">Пароль</label>
                                   <button  class="btn" type="submit">Войти</button>
                                   <div class="login-form-right">
-                                      <a href="#">Забыли пароль?</a>
-                                      <a href="#">Новая регистрация</a>
+                                     <a href="#">Забыли пароль?</a>
+                                     <a href="#">Новая регистрация</a>
                                   </div>
                               </form>
-                          </div>
-                      </div>
-                      <div class="user-block-basket user-item">
-                          <a class="basket" href="#">Пусто</a>
-                          <div class="basket-content">
-                              <table class="basket-table">
-                                  <tr class="row">
-                                      <td>
-                                          <a href="#" class="delete-item"> <img src="img/Х.svg" width="11" height="11" alt="Удалить"></a></td> 
-                                      <td>
-                                          <img src="img/small-1.png" width="33" height="33" alt=" Пломбир с апельсиновым джемом">
-                                      </td>
-                                      <td>
-                                          Пломбир с апельсиновым джемом
-                                      </td>
-                                      <td>
-                                          1,5 кг х <span>200 руб</span>
-                                      </td>
-                                      <td>
-                                          300 руб.
-                                      </td>
-                                  </tr>
-                                  <tr class="row">
-                                      <td>
-                                          <a href="#" class="delete-item"><img src="img/Х.svg" width="11" height="11" alt="Удалить"></a></td> 
-                                      <td>
-                                          <img src="img/small-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                                      </td>
-                                      <td>
-                                          Клубничный пломбир с присыпкой<br>
-                                              из белого шоколада
-                                      </td>
-                                      <td>
-                                          1,5 кг х <span>300 руб</span>
-                                      </td>
-                                      <td>
-                                          450 руб.
-                                      </td>
-                                  </tr>
-                              </table>
-                              <div class="basket-price">
-                                  Итого: 750 руб.
+                          </li>
+                          <li class="user-block-basket user-item">
+                              <a class="basket" href="#">Пусто</a>
+                              <div class="basket-content">
+                                  <table class="basket-table">
+                                      <tr class="row">
+                                          <td>
+                                              <a href="#" class="delete-item"> <img src="img/x.svg" width="11" height="11" alt="Удалить"></a>
+                                          </td> 
+                                          <td>
+                                              <img src="img/small-1.png" width="33" height="33" alt=" Пломбир с апельсиновым джемом">
+                                          </td>
+                                          <td>
+                                              Пломбир с апельсиновым джемом
+                                          </td>
+                                          <td>
+                                              1,5 кг х <span>200 руб</span>
+                                          </td>
+                                          <td>
+                                              300 руб.
+                                          </td>
+                                      </tr>
+                                      <tr class="row">
+                                          <td>
+                                              <a href="#" class="delete-item"><img src="img/x.svg" width="11" height="11" alt="Удалить"></a></td> 
+                                          <td>
+                                              <img src="img/small-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                                          </td>
+                                          <td>
+                                              Клубничный пломбир с присыпкой<br>
+                                                  из белого шоколада
+                                          </td>
+                                          <td>
+                                              1,5 кг х <span>300 руб</span>
+                                          </td>
+                                          <td>
+                                              450 руб.
+                                          </td>
+                                      </tr>
+                                  </table>
+                                  <div class="basket-price">
+                                      Итого: 750 руб.
+                                  </div>
+                                  <div class="basket-link">
+                                      <a class="btn" href="#">Оформить заказ</a>
+                                  </div>
                               </div>
-                              <div class="basket-link">
-                                  <a class="btn" href="#">Оформить заказ</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>   
+                          </li>
+                      </ul> 
+                  </nav>
                   <div class="work-time">
                       <p>С 10 до 20, ежедневно</p>
-                      <p class="big">8 812 450-25-25</p>   
+                      <a href="tel:88124502525">8 812 450-25-25</a>  
                   </div>
               </div>
           </header>
@@ -165,13 +163,12 @@
                                  <img src="img/ice1.png"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                               </div>
                               <div class="price">
-                                  <span class="large">310</span><span class="little">/кг</span>
+                                  310<img src="img/ru-currency.svg" width="32" height="37" alt="руб."><span>/кг</span>
                               </div>
                           </div>
                           <div class="bottom-ice-item">
                               <div class="ices-link">
-                                  <a href="#">Сливочное с апельсиновым<br>
-                                  джемом и цитрусовой стружкой</a>
+                                  <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                               </div>
                               <div class="ices-link-hover">
                                   <a class="btn" href="#">Быстрый просмотр</a>
@@ -187,13 +184,12 @@
                                  <img src="img/ice2.png"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                               </div>
                               <div class="price">
-                                  <span class="large">310</span><span class="little">/кг</span>
+                                  380<img src="img/ru-currency.svg" width="32" height="37" alt="руб."><span>/кг</span>
                               </div>
                           </div>
                           <div class="bottom-ice-item">
                               <div class="ices-link">
-                                  <a href="#">Сливочное с апельсиновым<br>
-                                  джемом и цитрусовой стружкой</a>
+                                  <a href="#">Сливочно-кофейное с кусочками  шоколада</a>
                               </div>
                               <div class="ices-link-hover">
                                   <a class="btn" href="#">Быстрый просмотр</a>
@@ -209,13 +205,12 @@
                                  <img src="img/ice3.png"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                               </div>
                               <div class="price">
-                                  <span class="large">310</span><span class="little">/кг</span>
+                                  355<img src="img/ru-currency.svg" width="32" height="37" alt="руб."><span>/кг</span>
                               </div>
                           </div>
                           <div class="bottom-ice-item">
                               <div class="ices-link">
-                                  <a href="#">Сливочное с апельсиновым<br>
-                                  джемом и цитрусовой стружкой</a>
+                                  <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                               </div>
                               <div class="ices-link-hover">
                                   <a class="btn" href="#">Быстрый просмотр</a>
@@ -231,14 +226,14 @@
                                  <img src="img/ice4.png"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                               </div>
                               <div class="price">
-                                  <span class="large">310</span><span class="little">/кг</span>
+                                  415<img src="img/ru-currency.svg" width="32" height="37" alt="руб."><span>/кг</span>
                               </div>
                           </div>
                           <div class="bottom-ice-item">
                               <div class="ices-link">
-                                  <a href="#">Сливочное с апельсиновым<br>
-                                  джемом и цитрусовой стружкой</a>
+                                  <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
                               </div>
+                              
                               <div class="ices-link-hover">
                                   <a class="btn" href="#">Быстрый просмотр</a>
                               </div>
@@ -287,7 +282,8 @@
                   <article class="subscription">
                       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
                       <form class="subscription-form" action="#" method="post">
-                          <input type="text" name="email" placeholder="Электронная почта">  
+                          <input type="text" id="email2" name="email" placeholder="Электронная почта">  
+                          <label class="email2" for="email2">Электронная почта</label>
                           <button  class="btn" type="submit">Отправить</button> 
                       </form>
                   </article>      
@@ -295,7 +291,7 @@
           </main>
           <section class="info clearfix rar"> 
               <div class="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123638!2d30.320894615634952!3d59.93879686904849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1472284539148" width="100%" height="430px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123638!2d30.320894615634952!3d59.93879686904849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1472284539148" width="100%" height="430"  style="border:0" allowfullscreen></iframe>
               </div>
               <div class=" aside ">
                   <p>Адрес главного офиса и <br>
@@ -365,10 +361,12 @@
           <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
           <p>Мы обязательно вам ответим!</p>
           <form class="modal-form" action="#" method="post">
-              <input type="text"  name="name" placeholder="Как вас зовут?">
-            
-              <input type="text" name="email" placeholder="Ваша почта для ответа">
-              <textarea name="text"  placeholder="Напишите что-нибудь..."></textarea> 
+              <input type="text" id="name1" name="name" placeholder="Как вас зовут?">
+              <label class="name1" for="name1">Как вас зовут?</label>
+              <input type="email" id="email1" name="email" placeholder="Ваша почта для ответа">
+              <label class="email" for="email1">Ваша почта для ответа</label>
+              <textarea name="text" id="textarea1" placeholder="Напишите что-нибудь..."></textarea>
+              <label class="textarea" for="textarea1">Напишите что-нибудь...</label>
               <button class="btn">Отправить</button>
           </form>   
       </div>
