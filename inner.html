@@ -3,25 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
        <header class="main-header">
               <div class="container clearfix"> 
                   <nav class="main-navigation clearfix"> 
                       <div class="index-logo">
-                           <a href=""><img src="img/logo.svg" width="153" height="63" alt="Логотип"></a>
+                           <a href="index.html"><img src="img/logo.svg" width="153" height="63" alt="Логотип"></a>
                       </div>
                       <ul class="main-menu">
-                          <li class="active-page">
+                          <li class="nav-item active-page">
                               <a href="#">Каталог</a>
                               <ul class="sub-menu">
-                                    <li><a href="#1">Новинки</a></li>
-                                    <li class="active-product"><a>Сливочное</a></li>
-                                    <li><a href="#3">Щербеты</a></li>
-                                    <li><a href="#2">Фруктовый лед</a></li>
-                                    <li><a href="#3">Мелорин</a></li>
+                                    <li class="sub-menu-link"><a href="#1">Новинки</a></li>
+                                    <li class="sub-menu-link active-product"><a>Сливочное</a></li>
+                                    <li class="sub-menu-link"><a href="#3">Щербеты</a></li>
+                                    <li class="sub-menu-link"><a href="#2">Фруктовый лед</a></li>
+                                    <li class="sub-menu-link"><a href="#3">Мелорин</a></li>
                               </ul>
                           </li>
                           <li class="nav-item">
@@ -113,7 +114,7 @@
               <div class="breadcrumbs">
                   <ul class="breadcrumbs-list">
                       <li class="breadcrumbs-item">
-                          <a class="breadcrumbs-link" href="#"> Главная »</a>
+                          <a class="breadcrumbs-link" href="index.html"> Главная »</a>
                       </li>
                       <li class="breadcrumbs-item">
                           <a class="breadcrumbs-link" href="#"> Каталог »</a>
@@ -504,10 +505,10 @@
                       <div class="footer-nav ">
                           <div class="footer-nav-left">
                               <ul class="nav-left-list">
-                                  <li class="nav-item">
+                                  <li class="footer-nav-item">
                                       <a href="#">Для поставщиков</a>
                                   </li>
-                                  <li class="nav-item">
+                                  <li class="footer-nav-item">
                                       <a href="#">О производстве</a>
                                   </li>
                               </ul>
@@ -515,10 +516,10 @@
                           </div>
                           <div class="footer-nav-right">
                               <ul class="nav-right-list">
-                                  <li class="nav-item">
+                                  <li class="footer-nav-item">
                                       <a href="#">Наши документы</a>
                                   </li>
-                                  <li class="nav-item">
+                                  <li class="footer-nav-item">
                                       <a href="#">Экологические стандарты</a>
                                   </li>
                               </ul>
