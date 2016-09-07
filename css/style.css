@@ -193,9 +193,11 @@ p {
 .container {
     width: 1146px;
     padding: 0 27px;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
+
+
+
 
 nav {
 	
@@ -815,21 +817,27 @@ input + textarea:focus::-webkit-input-placeholder {color: transparent}
 }
 
 .info {
+    position: relative
+    min-width: 1500px;
     height: 430px;
     margin: 0;  
-    position: relative;
+    background: url(../img/bg-map.jpg) no-repeat;
 }
 
-.map {
-    z-index: 5;
+.container1 {
+    position: relative;
+    width: 1146px;
+    padding: 0 27px;
+    margin: 0 auto; 
+    
 }
 
 .aside {
     position: absolute;
+    right: 27px;
     top: 62px;
-    right: 100px;
     z-index: 20;
-    float: right;
+    
     padding: 30px 26px ;
     min-height: 245px;
     width: 250px;
@@ -1309,8 +1317,8 @@ span.bold {
 .pagination {
     font-size: 0;
     height: 26px;
-    margin-top: 40px;
-    margin-bottom: 34px;
+    margin-top: 43px;
+    margin-bottom: 28px;
 }
 
 .pagination_item {
@@ -1954,4 +1962,8 @@ a, .btn, textarea, input, select, button, option {
     border-radius: 100px;
     color: #ffffff;
 	border:none;
+}
+
+.inner-flash {
+    background: #849d8f url(../img/flash.png)  repeat-x;
 }
