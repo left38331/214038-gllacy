@@ -5,7 +5,7 @@
         <title>HTML Academy: Глейси</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <input type="radio" id="btn-1" name="toggle" checked>
@@ -356,7 +356,7 @@
             <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
             <p>Мы обязательно вам ответим!</p>
             <form class="modal-form" action="#" method="post">
-                <input type="text" id="name1" name="name" placeholder="Как вас зовут?">
+                <input type="text" id="name1" name="names" placeholder="Как вас зовут?">
                 <label class="name1" for="name1">Как вас зовут?</label>
                 <input type="email" id="email1" name="email" placeholder="Ваша почта для ответа">
                 <label class="email" for="email1">Ваша почта для ответа</label>
@@ -367,6 +367,61 @@
         </div>
         <div class="modal-overlay">
         </div>
+        <script>
+            var link = document.querySelector(".btn-aside");   
+            
+            var popup = document.querySelector(".modal-content");
+            
+            var close = popup.querySelector(".modal-content-close");
+            
+            var overlay = document.querySelector(".modal-overlay");
+            
+            var del = document.querySelector(".delete-item");
+            
+            var zad = document.querySelector(".row");
+            
+            var login1 = popup.querySelector("[name=names]");
+            
+            var form = popup.querySelector("form");
+            
+            var email = popup.querySelector("[name=email]");
+            
+            
+            del.addEventListener("click", function(event) {
+                event.preventDefault();
+                zad.classList.add("row-del");
+            });
+            
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.add("modal-content-show");
+                overlay.classList.add("modal-overlay-show");
+                login1.focus();
+            });
+            
+            form.addEventListener("submit", function(event){
+                if (!login1.value || !email.value) {
+                    event.preventDefault();
+                    popup.classList.remove("modal-error");
+                    popup.offsetWidth = popup.offsetWidth;
+                    popup.classList.add("modal-error");
+                }
+            });
+            
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-content-show");
+                popup.classList.remove("modal-error");
+                overlay.classList.remove("modal-overlay-show");
+            });
+            
+            overlay.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-content-show");
+                overlay.classList.remove("modal-overlay-show");
+            });
+            
+        </script>
     </body>
 </html>
 
